@@ -1,5 +1,7 @@
 FROM gliderlabs/alpine:3.3
 
+RUN apk add --no-cache procps
+
 RUN addgroup -S centrifugo && adduser -S -G centrifugo centrifugo \
     && mkdir /centrifugo && chown centrifugo:centrifugo /centrifugo \
     && mkdir /var/log/centrifugo && chown centrifugo:centrifugo /var/log/centrifugo
