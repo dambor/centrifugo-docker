@@ -8,6 +8,8 @@ RUN addgroup -S centrifugo && adduser -S -G centrifugo centrifugo \
 
 ADD centrifugo /usr/bin/centrifugo
 
+ADD config.json /centrifugo/config.json 
+
 VOLUME ["/centrifugo", "/var/log/centrifugo"]
 
 WORKDIR /centrifugo

@@ -1,0 +1,16 @@
+{
+ "secret": "6d72fcd9-db86-4dd2-a6d9-5030fe7de582",
+ "admin_password": "secret",
+ "admin_secret": "secret",
+   "watch": true,
+   "publish": true,
+   "anonymous": true,
+   "presence": true,
+   "join_leave": true,
+   "history_size": 100000000,
+   "history_lifetime": 100000000,
+   "recover": false,
+   "history_drop_inactive": false,
+   "client_channel_limit": 1000,
+   "client_queue_max_size": 10000000
+}
